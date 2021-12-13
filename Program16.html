@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title> 
+	Traversal in JacaScript!
+</title>
+
+<h2> 
+	for loop is The best way to traverse in java. 
+</h2>
+
+</head>
+
+<p id = 'demo'></p>
+
+<script>
+	
+	function ArrayX()
+	{
+		const Arr = ["Banana", "Orange", "Apple", "Mango"];
+		
+		let len = Arr.length;
+		
+		let text = "<ul>"
+		
+		for(let i = 0;i < len;i++)
+		{
+			text += "<li>" + Arr[i] + "</li>";
+		}
+		
+		text += "</ul>";
+		
+		document.getElementById('demo').innerHTML = Arr;
+	}
+</script>
+
+<button type = 'button' onclick = "ArrayX()">
+	Display List
+</button>
+
+</html>

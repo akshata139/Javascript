@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>forEach() with exaple :</p>
+
+<p id="demo"></p>
+
+<button type = 'button' onclick = "myFunction()">Add 
+</button>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+{
+	fruits.push("Pinapple");
+	document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<title> Conditions in JavaScript </title>
+
+<h2> If - else condition !....</h2>
+
+<body>
+
+<p> A time based greeting. </p>
+<p id = "demo"></p>
+
+<script>
+
+function Check()
+	{
+	const time = new Date().getHours();
+	let greeting;
+	
+	if(time < 18)
+	{
+		greeting = "Have a good day!";
+	}
+	else
+	{
+		greeting = "Have a good evening!";
+	}
+	
+	document.getElementById("demo").innerHTML = greeting;
+	
+	}
+
+</script>
+
+<button type = 'button' onclick = 'Check()'>Check</button>
+</body>
+</html>

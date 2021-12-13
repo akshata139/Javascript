@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<title> Sets in JavaScript </title>
+
+<h2> Adding elements to set.</h2>
+
+<body>
+<p> set is a collection of unique values. </p>
+<p id = "demo"></p>
+
+<script>
+
+	const letters = new Set();
+	
+	const a = "Akshata";
+	const b = "Rajendra";
+	const c = "Kalaskar";
+	
+	letters.add(a);
+	letters.add(b);
+	letters.add(c);
+	
+	let text = " ";
+	
+	letters.forEach(function(value)
+	
+	{
+		text += value + "<br>";
+	}
+	
+	console.log("Size of set is : ");
+	let iSize = letters.size;
+	
+	)
+
+
+</script>
+
+<button type = 'button' onclick = 'document.getElementById("demo").innerHTML = text'>Sets</button>
+<button type = 'button' onclick = 'document.getElementById("demo").innerHTML = size'>Size</button>
+
+</body>
+</html>

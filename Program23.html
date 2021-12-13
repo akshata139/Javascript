@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h2> Javascript Try..Catch! </h2>
+
+<p> Please input a number between 5 and 10 </p>
+
+<input id = "demo" type = "text">
+<button type = "button" onclick = "MyFunction()"> Test Input </button>
+<p id = "P01"></p>
+
+<script>
+
+function MyFunction()
+{
+	const message = document.getElementById("P01");
+	message.innerHTML = "";
+	
+	let x = document.getElementById("demo").value;
+
+	try
+	{
+		if(x == " ")
+		{
+			throw "Empty!";
+		}
+		if(isNaN(x))
+		{
+			throw "Not a number!";
+		}
+		
+		x = Number(x);
+		
+		if(x < 5)
+		{
+			throw "Too Low!";
+		}
+		if(x > 10)
+		{
+			throw "Too High!";
+		}
+	}
+	catch(err)
+	{
+		message.innerHTML = "input is" + err;
+	}
+	
+}
+
+</script>
+</body>
+</html>
